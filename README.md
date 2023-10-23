@@ -48,8 +48,16 @@ In the process of implementing the plan, modify the plan by replacing virtual ma
 ```
 
 2.Traffic Control Manual
+
 ```
+tc qdisc add dev eth1 root netem delay 100ms ## add 100ms delay
+tc qdisc add dev eth1 root netem loss 25% ## add 25% packet loss
 ```
+
+TCP (Transmission Control Protocol) is capable of retransmitting lost packets to ensure data integrity. When a packet is lost, TCP initiates a retransmission to recover the missing data, thereby maintaining the continuity of the data stream. However, this recovery process does introduce some slowdown in the network. Even though TCP can recover lost packets, the time it takes to retransmit them can make the network feel slower.
+
+Additionally, TCP responds to packet loss by reducing its throughput and introducing extra delays. This reduction in throughput and the added delay persist as long as the current data transfer rate does not meet the sending rate of the data flow. In other words, TCP adapts its transmission speed to account for network congestion or packet loss, which can lead to a temporary decrease in performance and responsiveness until the network stabilizes.
+
  If a packet is lost, TCP can retransmit it. The second transmission picks up lost packets and reconstructs the data stream. However, this does not mean there is no slowdown involved. The network may feel slower, as it still takes time to retransmit data. On the other hand, After a packet drop, TCP reduces its throughput, and introduces additional delay for as long as the throughput it provides does not satisfy the sending rate of the flow.
 
-
+ Considering real-world usage scenarios, experiments will be conducted with packet loss rates of 25%, 50%, and 70%, as well as latency values of 100ms, 300ms, and 500ms. Each test will be repeated three times, lasting for 5 minutes, and the results will be averaged. Each experiment will record smoothness, GPU and CPU frequencies.
