@@ -36,7 +36,7 @@ References:
 **Update**
 
 1. Set up three test equipments:\n
-  |  CPU    |   RAM  |          GPU           | SSD |\n
+  |  CPU    |   RAM  |          GPU           | SSD |/n
   | 6700k   |   8G   | Intel® HD Graphics 530 | 1T  |\n
   | 6700k   |   8G   | GeForce GT 1030        | 1T  |\n
   | 6700k   |   8G   | GeForce GTX 750 Ti     | 1T  |\n
