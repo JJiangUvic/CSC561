@@ -35,10 +35,21 @@ References:
 
 **Update**
 
-1. Set up three test equipments:\n
-  |  CPU    |   RAM  |          GPU           | SSD |/n
-  | 6700k   |   8G   | Intel® HD Graphics 530 | 1T  |\n
-  | 6700k   |   8G   | GeForce GT 1030        | 1T  |\n
-  | 6700k   |   8G   | GeForce GTX 750 Ti     | 1T  |\n
-  | 6700k   |   8G   | GeForce GTX 3090       | 1T  |\n
+In the process of implementing the plan, modify the plan by replacing virtual machines with temporarily assembled computers. To better control the network, use a software router separately to run Linux Traffic Control.
+
+1. Set up three test equipments:
+
+```
+  |  CPU    |   RAM  |          GPU           | SSD |
+  | 6700k   |   8G   | Intel® HD Graphics 530 | 1T  |
+  | 6700k   |   8G   | GeForce GT 1030        | 1T  |
+  | 6700k   |   8G   | GeForce GTX 750 Ti     | 1T  |
+  | 6700k   |   8G   | GeForce GTX 3090       | 1T  |
+```
+
+2.Traffic Control Manual
+```
+```
+ If a packet is lost, TCP can retransmit it. The second transmission picks up lost packets and reconstructs the data stream. However, this does not mean there is no slowdown involved. The network may feel slower, as it still takes time to retransmit data. On the other hand, After a packet drop, TCP reduces its throughput, and introduces additional delay for as long as the throughput it provides does not satisfy the sending rate of the flow.
+
 
