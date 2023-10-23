@@ -27,4 +27,4 @@ This project aims to provide initial insights into YouTube video streaming perfo
 
 References:
 
-[1]: https://www.youtube.com/
+[1]: https://www.youtube.com
