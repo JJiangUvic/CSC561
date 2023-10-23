@@ -33,7 +33,7 @@ References:
 
 *****
 
-**Update**
+**Update[Oct.20 2023]**
 
 In the process of implementing the plan, modify the plan by replacing virtual machines with temporarily assembled computers. To better control the network, use a software router separately to run Linux Traffic Control.
 
