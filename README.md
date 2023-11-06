@@ -77,7 +77,14 @@ Additionally, TCP responds to packet loss by reducing its throughput and introdu
 ### The specific details for setting up the experimental platform
 #### 1. Experimental environment architecture
 ![Layout](https://github.com/JJiangUvic/CSC561/assets/49337962/3b7959ce-ec76-4d35-aac0-12e8feb2e771)
-###### 开发前的配置要求
+##### Hardware Explain:
+•	Master Router
+
+•	Network environment parameters (latency and packet loss)
+
+•	Video quality(4K-8K)
+
+•	Impact of modern video codecs (AV1 and VP9)
 
 
 
