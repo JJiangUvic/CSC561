@@ -162,3 +162,5 @@ Some Analysis:
 2. An investigation into the relationship between 3D and video playback is needed.
 
 3. Improving the experimental equipment, if possible, by upgrading to high-resolution displays and using better cables.
+
+4. Increasing the analysis of the network component.
