@@ -70,5 +70,5 @@ Additionally, TCP responds to packet loss by reducing its throughput and introdu
 ## Index for project update.
 - [The specific details for setting up the experimental platform](#platform)
 
-### platform
+### The specific details for setting up the experimental platform
 
