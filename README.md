@@ -78,9 +78,9 @@ Additionally, TCP responds to packet loss by reducing its throughput and introdu
 #### 1. Experimental environment architecture
 ![Layout](https://github.com/JJiangUvic/CSC561/assets/49337962/3b7959ce-ec76-4d35-aac0-12e8feb2e771)
 ##### Hardware Explain:
-•	Master Router: The router is used to connect the local network to the local area network provider Shaw. It is responsible for signal modulation and provides services such as DHCP and packet transport for devices operating at layer 2
-
-•	Network environment parameters (latency and packet loss)
+•	Master Router: The router is used to connect the local network to the local area network provider Shaw. It is responsible for signal modulation and provides services such as DHCP and packet transport for devices operating at layer 2.
+•	Control PC: The PC running in a Windows 10 environment is used for receiving signals from a capture card and sending commands to the PC router in the experimental platform. The commands include configuring and modifying Linux router settings, as well as adjusting latency and packet loss rates.
+• Client Monitor: Providing video output for the participants in the experiment.
 
 •	Video quality(4K-8K)
 
