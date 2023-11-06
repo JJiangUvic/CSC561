@@ -11,7 +11,7 @@ The objective of this project is to conduct a comprehensive evaluation of YouTub
 
 While various studies have explored aspects of video streaming performance, there is limited research that combines GPU decoding, network parameters, video quality, and codec analysis within a controlled virtual environment. Previous efforts have often focused on isolated factors or lacked comprehensive assessments.
 
-The approach will involve setting up a simplified hardware environment to manipulate and monitor the selected variables , including GPU decoding performance: Assembly the environment to with different GPU models. A set of standardized video streams will be utilized to assess GPU decoding efficiency. Monitoring tools will be employed to measure GPU utilization, decoding speed, and any potential bottlenecks. On the other hand, the evaluation also utilize tools similar to the tc (Traffic Control) tools for network parameter control and configure YouTube settings to use AV1 and VP9 codecs. The project focuses will be on a rapid but rigorous analysis of these factors. 
+The approach will involve setting up a simplified hardware environment to manipulate and monitor the selected variables, including GPU decoding performance: Assembly of the environment to with different GPU models. A set of standardized video streams will be utilized to assess GPU decoding efficiency. Monitoring tools will be employed to measure GPU utilization, decoding speed, and any potential bottlenecks. On the other hand, the evaluation also utilizes tools similar to the tc (Traffic Control) tools for network parameter control and configure YouTube settings to use AV1 and VP9 codecs. The project focuses on a rapid but rigorous analysis of these factors. 
 
 Expected Deliverables and Timeline
 
@@ -58,19 +58,19 @@ TCP (Transmission Control Protocol) is capable of retransmitting lost packets to
 
 Additionally, TCP responds to packet loss by reducing its throughput and introducing extra delays. This reduction in throughput and the added delay persist as long as the current data transfer rate does not meet the sending rate of the data flow. In other words, TCP adapts its transmission speed to account for network congestion or packet loss, which can lead to a temporary decrease in performance and responsiveness until the network stabilizes.
 
- If a packet is lost, TCP can retransmit it. The second transmission picks up lost packets and reconstructs the data stream. However, this does not mean there is no slowdown involved. The network may feel slower, as it still takes time to retransmit data. On the other hand, After a packet drop, TCP reduces its throughput, and introduces additional delay for as long as the throughput it provides does not satisfy the sending rate of the flow.
+ If a packet is lost, TCP can retransmit it. The second transmission picks up lost packets and reconstructs the data stream. However, this does not mean there is no slowdown involved. The network may feel slower, as it still takes time to retransmit data. On the other hand, After a packet drop, TCP reduces its throughput and introduces additional delay for as long as the throughput it provides does not satisfy the sending rate of the flow.
 
- Considering real-world usage scenarios, experiments will be conducted with packet loss rates of 25%, 50%, and 70%, as well as latency values of 100ms, 300ms, and 500ms. Each test will be repeated three times, lasting for 5 minutes, and the results will be averaged. Each experiment will record smoothness, GPU and CPU frequencies.
+ Considering real-world usage scenarios, experiments will be conducted with packet loss rates of 25%, 50%, and 70%, as well as latency values of 100ms, 300ms, and 500ms. Each test will be repeated three times, lasting for 5 minutes, and the results will be averaged. Each experiment will record smoothness, GPU, and CPU frequencies.
 
  *****
 
 **Update[Nov.11 2023]**
 
 
-## Index for project update.
+## Index for the project update.
 - [The specific details for setting up the experimental platform](#上手指南)
   - [Experimental environment architecture](#上手指南)
-  - [Addition of experimental personnel and instructions](#2.Addition of experimental personnel and instructions)
+  - [Addition of experimental personnel and instructions](#2.Addition_of_experimental_personnel_and_instructions)
 - [The specific details for setting up the experimental platform](#Thespecifidetailsforsettinguptheexperimentalplatform)
 - [Addition of experimental personnel and instructions](#Addition of experimental personnel and instructions)
 
