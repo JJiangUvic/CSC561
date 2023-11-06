@@ -72,7 +72,7 @@ Additionally, TCP responds to packet loss by reducing its throughput and introdu
   - [Experimental environment architecture]()
   - [Addition of experimental personnel and instructions]()
 - [Experiment Progress]()
-
+  - [HD Graphics 530]()
 
 
 ### The specific details for setting up the experimental platform
