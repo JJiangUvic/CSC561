@@ -68,11 +68,9 @@ Additionally, TCP responds to packet loss by reducing its throughput and introdu
 
 
 ## Index for the project update.
-- [The specific details for setting up the experimental platform](#上手指南)
-  - [Experimental environment architecture](#上手指南)
-  - [Addition of experimental personnel and instructions](#2.Addition_of_experimental_personnel_and_instructions)
-- [The specific details for setting up the experimental platform](#Thespecifidetailsforsettinguptheexperimentalplatform)
-- [Addition of experimental personnel and instructions](#Addition of experimental personnel and instructions)
+- [The specific details for setting up the experimental platform]()
+  - [Experimental environment architecture]()
+  - [Addition of experimental personnel and instructions]()
 
 
 
