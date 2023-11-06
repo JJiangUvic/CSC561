@@ -78,17 +78,17 @@ Additionally, TCP responds to packet loss by reducing its throughput and introdu
 #### 1. Experimental environment architecture
 ![Layout](https://github.com/JJiangUvic/CSC561/assets/49337962/3b7959ce-ec76-4d35-aac0-12e8feb2e771)
 #### Hardware Explain:
-•	Master Router: The router is used to connect the local network to the local area network provider Shaw. It is responsible for signal modulation and provides services such as DHCP and packet transport for devices operating at layer 2.
+•	**Master Router**: The router is used to connect the local network to the local area network provider Shaw. It is responsible for signal modulation and provides services such as DHCP and packet transport for devices operating at layer 2.
 
-•	Control PC: The PC running in a Windows 10 environment is used for receiving signals from a capture card and sending commands to the PC router in the experimental platform. The commands include configuring and modifying Linux router settings, as well as adjusting latency and packet loss rates.
+•	**Control PC**: The PC running in a Windows 10 environment is used for receiving signals from a capture card and sending commands to the PC router in the experimental platform. The commands include configuring and modifying Linux router settings, as well as adjusting latency and packet loss rates.
 
-• Client Monitor: Providing video output for the participants in the experiment.
+• **Client Monitor**: Providing video output for the participants in the experiment.
 
-•	Capture card: Used to replicate video signals and provide data to the software installed on the Control PC.
+•	**Capture card**: Used to replicate video signals and provide data to the software installed on the Control PC.
 
-•	PC Router: A PC running in an Ubuntu environment, installed with an SSH server for remote login and control by the Control PC to achieve the experiment's objectives. It also installed TC (Traffic Control) for configuring network latency and packet loss rates. One of the physical network ports of this PC is directly point-to-point connected to a physical network port on the Control PC, with manual configuration to ensure communication for SSH login. Another port of this PC is connected to the Master Router, which provides IP and internet services through DHCP. Meanwhile, TC is used to adjust parameters like latency and packet loss on this port. Finally, the last port is connected to the Experiment PC to provide port forwarding for it.
+•	**PC Router**: A PC running in an Ubuntu environment, installed with an SSH server for remote login and control by the Control PC to achieve the experiment's objectives. It also installed TC (Traffic Control) for configuring network latency and packet loss rates. One of the physical network ports of this PC is directly point-to-point connected to a physical network port on the Control PC, with manual configuration to ensure communication for SSH login. Another port of this PC is connected to the Master Router, which provides IP and internet services through DHCP. Meanwhile, TC is used to adjust parameters like latency and packet loss on this port. Finally, the last port is connected to the Experiment PC to provide port forwarding for it.
 
-•	Experiment PC: A PC running in a Windows 10 environment is used to test various graphics cards, primarily through YouTube browsing. Additionally, this PC will provide video output to a monitor to provide data to the experimenters.
+•	**Experiment PC**: A PC running in a Windows 10 environment is used to test various graphics cards, primarily through YouTube browsing. Additionally, this PC will provide video output to a monitor to provide data to the experimenters.
 
 
 
