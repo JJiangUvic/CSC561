@@ -105,7 +105,8 @@ Ex. Response measures the video's loading speed. During the viewing, I will rand
 2. FrameRate:__/10
 3. Response:__/10
 
-###
+###Experiment Progress
+####HD Graphics 530
 
 
 
