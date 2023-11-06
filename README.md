@@ -155,7 +155,7 @@ Some Analysis:
 
 
 <br /><br />
-###Improving and Some Plans
+### Improving and Some Plans
 
 1. Surprisingly, based on the current results, it appears that GPU performance is not the primary influencing factor. Perhaps there is a need to adjust the testing approach, such as reducing the number of GPU comparison groups and increasing the comparison groups for stored and live videos.
 
