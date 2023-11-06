@@ -108,13 +108,16 @@ Ex. Response measures the video's loading speed. During the viewing, I will rand
 ### Experiment Progress
 #### HD Graphics 530
 The experiment is expected to last approximately two hours, including a 20-minute break. The experiment steps are as follows:  
-1. Step 1: Remotely log in to the PC Router through the Control PC using SSH and set the TC parameters. Command (cmd):
+
+Step 1: Remotely log in to the PC Router through the Control PC using SSH and set the TC parameters. Command (cmd):
 ```
 tc qdisc change dev eth1 root netem delay 0ms loss 0%
 ```
 In the real experiment, data from the experimental table will be used for configuration.  
-2. Step 2: Four participants watch YouTube videos, each lasting 5 minutes, and then response tests (randomly jumping to different time in the video)
-3. Step 3: Filled out the Survey, and calculate the average score  
+
+Step 2: Four participants watch YouTube videos, each lasting 5 minutes, and then response tests (randomly jumping to different times in the video)
+
+Step 3: Filled out the Survey, and calculate the average score  
 
 Data table
 | Package Loss | Delay | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
