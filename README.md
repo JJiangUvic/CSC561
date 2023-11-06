@@ -73,6 +73,7 @@ Additionally, TCP responds to packet loss by reducing its throughput and introdu
   - [Addition of experimental personnel and instructions]()
 - [Experiment Progress]()
   - [HD Graphics 530]()
+- [Improving and Some Plans]()
 
 
 ### The specific details for setting up the experimental platform
@@ -152,4 +153,4 @@ Some Analysis:
 
 5. These tests are based on stored videos, not live streams. It's expected that in a live-streaming scenario, latency and packet loss would have a more significant impact.
    
-
+###Improving and Some Plans
