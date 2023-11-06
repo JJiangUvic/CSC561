@@ -76,7 +76,7 @@ Additionally, TCP responds to packet loss by reducing its throughput and introdu
 
 ### The specific details for setting up the experimental platform
 #### 1. Experimental environment architecture
-[Structure](https://github.com/JJiangUvic/CSC561/blob/main/Layout.PNG)
+![Layout](https://github.com/JJiangUvic/CSC561/assets/49337962/3b7959ce-ec76-4d35-aac0-12e8feb2e771)
 
 
 
