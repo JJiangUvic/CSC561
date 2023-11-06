@@ -92,8 +92,14 @@ Additionally, TCP responds to packet loss by reducing its throughput and introdu
 
 ### Addition of experimental personnel and instructions
 
-For the objectivity of the experiment, four college students with video game experience have been invited, each one of them with notable sensitivity to frame rates and image quality.
+For the objectivity of the experiment, four college students with video game experience have been invited, each one of them with notable sensitivity to frame rates and image quality. They will fill out the following survey after viewing.
+Ex. Response measures the video's loading speed. During the viewing, I will randomly skip to a particular segment, such as fast-forwarding.
 
+###### Survey
+
+1. Quality:__/10
+2. FrameRate:__/10
+3. Response:__/10
 
 
 
