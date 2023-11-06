@@ -100,9 +100,9 @@ Ex. Response measures the video's loading speed. During the viewing, I will rand
 
 ###### Survey
 
-1. Quality:__/10
-2. FrameRate:__/10
-3. Response:__/10
+1. Quality:__/9
+2. FrameRate:__/9
+3. Response:__/9
 
 <br /><br />
 ### Experiment Progress
