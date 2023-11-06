@@ -91,9 +91,9 @@ Additionally, TCP responds to packet loss by reducing its throughput and introdu
 •	***Experiment PC***: A PC running in a Windows 10 environment is used to test various graphics cards, primarily through YouTube browsing. Additionally, this PC will provide video output to a monitor to provide data to the experimenters.
 
 
+<br /><br />
 
-
-### Addition of experimental personnel and instructions
+### 2.Addition of experimental personnel and instructions
 
 For the objectivity of the experiment, four college students with video game experience have been invited, each one of them with notable sensitivity to frame rates and image quality. They will fill out the following survey after viewing.
 Ex. Response measures the video's loading speed. During the viewing, I will randomly skip to a particular segment, such as fast-forwarding.
