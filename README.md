@@ -108,7 +108,7 @@ Ex. Response measures the video's loading speed. During the viewing, I will rand
 ### Experiment Progress
 #### HD Graphics 530
 | Package Loss | Delay | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
-| :-----| ----: | :----: | ----: | ----: |
+| :----: | :----: | :----: | :----: | :----: |
 | 单元格 | 单元格 | 单元格 | 单元格 | 单元格 | 单元格 | 
 | 单元格 | 单元格 | 单元格 | 单元格 | 单元格 | 单元格 |
 
