@@ -115,9 +115,11 @@ tc qdisc change dev eth1 root netem delay 0ms loss 0%
 ```
 In the real experiment, data from the experimental table will be used for configuration.  
 
-Step 2: Four participants watch YouTube videos, each lasting 5 minutes, and then response tests (randomly jumping to different times in the video)
+Step 2: Perform ping tests to ensure that the correct latency and packet loss conditions are in place at that time
 
-Step 3: Filled out the Survey, and calculate the average score  
+Step 3: Four participants watch YouTube videos, each lasting 5 minutes, and then response tests (randomly jumping to different times in the video)
+
+Step 4: Filled out the Survey, and calculate the average score  
 
 Data table
 | Package Loss | Delay | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
@@ -139,7 +141,8 @@ Data table
 | 20% | 200 | 7 | 3 | 6 | 
 | 20% | 500 | 6 | 1 | 1 | 
 
-
+Some Analysis:  
+1. 
 
 
 
