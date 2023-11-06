@@ -152,5 +152,13 @@ Some Analysis:
 4. Latency significantly affects loading speed, especially when loading video for the first time. It also affects the speed of skipping. On the other hand, packet loss has a much smaller impact on the video, possibly because the transmission protocol has some special mechanisms at the application layer.
 
 5. These tests are based on stored videos, not live streams. It's expected that in a live-streaming scenario, latency and packet loss would have a more significant impact.
-   
+
+
+<br /><br />
 ###Improving and Some Plans
+
+1. Surprisingly, based on the current results, it appears that GPU performance is not the primary influencing factor. Perhaps there is a need to adjust the testing approach, such as reducing the number of GPU comparison groups and increasing the comparison groups for stored and live videos.
+
+2. An investigation into the relationship between 3D and video playback is needed.
+
+3. Improving the experimental equipment, if possible, by upgrading to high-resolution displays and using better cables.
