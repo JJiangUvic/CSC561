@@ -107,6 +107,8 @@ Ex. Response measures the video's loading speed. During the viewing, I will rand
 <br /><br />
 ### Experiment Progress
 #### HD Graphics 530
+The experiment is expected to last approximately two hours, including a 20-minute break. The experiment steps are as follows:  
+1.Step 1: 
 | Package Loss | Delay | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
 | :----: | :----: | :----: | :----: | :----: |
 | 0% | 0 | 7 | 4 | 8 | 
