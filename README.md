@@ -74,6 +74,7 @@ Additionally, TCP responds to packet loss by reducing its throughput and introdu
 - [Experiment Progress]()
   - [HD Graphics 530]()
 - [Improving and Some Plans]()
+- [Problems and Some Solutions]()
 
 
 ### The specific details for setting up the experimental platform
@@ -175,3 +176,6 @@ Some Analysis:
 3. Bitrates and physical monitors have different rules; for example, playing a 1080P video on a 1080P monitor is different from playing a 4K video on a 1080P monitor. Further research is needed.
 
 4. So far, it is considered that the monitor may have an impact on the experimental results (issue not resolved).
+
+5. In the previous updates, I mentioned a new direction for the experiment and will be modifying the proposal after taking advice into consideration.
+
