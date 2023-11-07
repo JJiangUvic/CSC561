@@ -164,3 +164,14 @@ Some Analysis:
 3. Improving the experimental equipment, if possible, by upgrading to high-resolution displays and using better cables.
 
 4. Increasing the analysis of the network component.
+
+<br /><br />
+### Problems and Some Solutions
+
+1. In the initial attempt, I tried to meet all the requirements on the Experiential PC but failed to control the network environment variables, primarily due to a lack of experience in setting port parameters on Windows. To fix this issue, I made the above changes, as shown in the previous image: I separated the router and the client into two devices. The reason for this improvement is that Windows is better suited for experimenting with YouTube, while Linux is more suitable for operating TC. With the redesigned setup, I can SSH into the router for control.(solved)
+
+2. In the initial setup, I attempted to record the screen while playing YouTube to facilitate data recording. However, the screen recording software had an impact on the experimental results. The solution was to use a capture card: After implementing the capture card, screen recording is done on another PC and doesn't affect the experiment (resolved).
+
+3. Bitrates and physical monitors have different rules; for example, playing a 1080P video on a 1080P monitor is different from playing a 4K video on a 1080P monitor. Further research is needed.
+
+4. So far, it is considered that the monitor may have an impact on the experimental results (issue not resolved).
