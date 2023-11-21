@@ -206,3 +206,10 @@ Data table(GTX 750 Ti)
 | 10% | 200 | 7 | 5 | 6 | 
 
 #### Next step plan
+The supplementary experiment: testing increased bandwidth for different experimental groups, with 10MB and 100MB.
+
+
+#### Some Thoughts
+1. The monitor may have some impact. Try changing the monitor to gather more data.
+2. YouTube's algorithm is already very effective, and in the vast majority of cases, bandwidth is not a significant consideration (more experiments will be conducted in this regard in the next steps). Latency and packet loss have minimal impact on the storage type of videos. In some cases, it may only affect the frame rate. Research will be conducted in this area.
+3. Small-scale experiments will be conducted with live-streaming videos, focusing specifically on testing with the 750 Ti. Emphasis will be on bandwidth, latency, and packet loss.
