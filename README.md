@@ -184,7 +184,18 @@ Some Analysis:
 **Update[Nov.20 2023]**
 ### More Experiments 
 For some improvements to the experiment: we reduced certain unreasonable experimental groups to make the experiment more reasonable.
-Data table
+Data table(GTX 750 Ti)
+| Package Loss | Delay | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
+| :----: | :----: | :----: | :----: | :----: |
+| 0% | 0 | 7 | 4 | 8 | 
+| 0% | 200 | 7 | 3 | 6 | 
+| 5% | 0 | 7 | 5 | 7 | 
+| 5% | 200 | 6 | 4 | 6 | 
+| 10% | 0 | 6 | 4 | 8 | 
+| 10% | 200 | 7 | 3 | 6 | 
+
+
+Data table(GTX 750 Ti)
 | Package Loss | Delay | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
 | :----: | :----: | :----: | :----: | :----: |
 | 0% | 0 | 7 | 4 | 8 | 
