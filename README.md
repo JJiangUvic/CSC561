@@ -183,6 +183,7 @@ Some Analysis:
 
 **Update[Nov.20 2023]**
 ### More Experiments 
+For some improvements to the experiment: we reduced certain unreasonable experimental groups to make the experiment more reasonable.
 Data table
 | Package Loss | Delay | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
 | :----: | :----: | :----: | :----: | :----: |
@@ -192,5 +193,3 @@ Data table
 | 5% | 200 | 6 | 4 | 6 | 
 | 10% | 0 | 6 | 4 | 8 | 
 | 10% | 200 | 7 | 3 | 6 | 
-| 20% | 0 | 7 | 4 | 5 | 
-| 20% | 200 | 7 | 3 | 6 | 
