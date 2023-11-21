@@ -179,3 +179,18 @@ Some Analysis:
 
 5. In the previous updates, I mentioned a new direction for the experiment and will be modifying the proposal after taking advice into consideration.
 
+ *****
+
+**Update[Nov.20 2023]**
+### More Experiments 
+Data table
+| Package Loss | Delay | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
+| :----: | :----: | :----: | :----: | :----: |
+| 0% | 0 | 7 | 4 | 8 | 
+| 0% | 200 | 7 | 3 | 6 | 
+| 5% | 0 | 7 | 5 | 7 | 
+| 5% | 200 | 6 | 4 | 6 | 
+| 10% | 0 | 6 | 4 | 8 | 
+| 10% | 200 | 7 | 3 | 6 | 
+| 20% | 0 | 7 | 4 | 5 | 
+| 20% | 200 | 7 | 3 | 6 | 
