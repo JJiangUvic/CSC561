@@ -146,7 +146,7 @@ Data table
 Some Analysis:  
 1. During the ping test, some interesting observations were made. When setting the ping test to 50 packets, packet loss, and latency would occasionally overlap. For instance, when setting a 5% packet loss rate and a 100ms latency, there were instances where the packet loss rate exceeded 5% and approached 10%. This phenomenon only occurred when sending 50 packets. However, when increasing the test packet count to 1000, this issue did not occur again.
 
-2. It seems that playing 8K videos doesn't impose a significant load on the GPU. Interestingly, while playing videos, there doesn't appear the work load on the decoding aspect. On the other hand, there is some load on the 3D aspect, but it's not particularly high.
+2. It seems that playing 4K videos doesn't impose a significant load on the GPU. Interestingly, while playing videos, there doesn't appear the work load on the decoding aspect. On the other hand, there is some load on the 3D aspect, but it's not particularly high.
 
 3. Latency and packet loss don't seem to have a significant impact on the video quality but do affect the frame rate. A 120fps video might feel less smooth than a 30fps one, which requires further testing to confirm if it's related to GPU performance. However, it is indeed associated with latency and packet loss rates.
 
