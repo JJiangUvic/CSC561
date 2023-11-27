@@ -230,14 +230,14 @@ Data table(Intel 530) Extended with bandwidth
 Data table(GT1030) Extended with bandwidth
 | Delay(ms) | Package Loss | Bandwidth(kbps) | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
 | :----: | :----: | :----: | :----: | :----: | :----: |
-| 000 | 00% | 000 | 8 | 8 | 9 | 
-| 200 | 00% | 000 | 8 | 3 | 6 | 
-| 000 | 10% | 000 | 8 | 5 | 8 | 
+| 000 | 00% | 000 | 7 | 7 | 9 | 
+| 200 | 00% | 000 | 8 | 6 | 6 | 
+| 000 | 10% | 000 | 8 | 6 | 8 | 
 | 200 | 10% | 000 | 7 | 5 | 6 |
-| 000 | 00% | 512 | 8 | 8 | 9 | 
+| 000 | 00% | 512 | 8 | 6 | 5 | 
 | 200 | 00% | 512 | 8 | 3 | 7 | 
-| 000 | 10% | 512 | 8 | 4 | 8 | 
-| 200 | 10% | 512 | 8 | 5 | 6 | 
+| 000 | 10% | 512 | 8 | 6 | 5 | 
+| 200 | 10% | 512 | 8 | 5 | 5 | 
 
 
 Data table(GTX 750 Ti) Extended with bandwidth
