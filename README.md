@@ -126,6 +126,8 @@ Experimental Table
 | 200 | 00% | 512 |  |  |  | 
 | 000 | 10% | 512 |  |  |  | 
 | 200 | 10% | 512 |  |  |  |
+
+
 In the real experiment, data from the experimental table will be used for configuration.  
 
 Step 2: Perform ping tests to ensure that the correct latency and packet loss conditions are in place at that time
