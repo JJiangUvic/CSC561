@@ -217,7 +217,7 @@ The supplementary experiment: testing increased bandwidth for different experime
 Data table(GTX 750 Ti) Extended with bandwidth
 | Package Loss | Delay | Bandwidth | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
 | :----: | :----: | :----: | :----: | :----: | :----: |
-| 0% | 0 | 8 | 8 | 9 | 
+| 00% | 0 | 8 | 8 | 9 | 
 | 0% | 200 | 8 | 3 | 6 | 
 | 5% | 0 | 8 | 5 | 8 | 
 | 5% | 200 | 8 | 5 | 7 | 
