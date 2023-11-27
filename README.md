@@ -227,7 +227,7 @@ The supplementary experiment: testing increased bandwidth for different experime
 2. YouTube's algorithm is already very effective, and in the vast majority of cases, bandwidth is not a significant consideration (more experiments will be conducted in this regard in the next steps). Latency and packet loss have minimal impact on the storage type of videos. In some cases, it may only affect the frame rate. Research will be conducted in this area.
 3. Small-scale experiments will be conducted with live-streaming videos, focusing specifically on testing with the 750 Ti. Emphasis will be on bandwidth, latency, and packet loss.
 
-Data table(Intel 530) Extended with bandwidth
+Data table(Intel 530) Extended with Bandwidth
 | Delay(ms) | Package Loss | Bandwidth(kbps) | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
 | :----: | :----: | :----: | :----: | :----: | :----: |
 | 000 | 00% | 000 | 7 | 4 | 8 | 
@@ -240,7 +240,7 @@ Data table(Intel 530) Extended with bandwidth
 | 200 | 10% | 512 | 7 | 5 | 5 | 
 
 
-Data table(GT1030) Extended with bandwidth
+Data table(GT1030) Extended with Bandwidth
 | Delay(ms) | Package Loss | Bandwidth(kbps) | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
 | :----: | :----: | :----: | :----: | :----: | :----: |
 | 000 | 00% | 000 | 7 | 7 | 9 | 
@@ -253,7 +253,7 @@ Data table(GT1030) Extended with bandwidth
 | 200 | 10% | 512 | 8 | 5 | 5 | 
 
 
-Data table(GTX 750 Ti) Extended with bandwidth
+Data table(GTX 750 Ti) Extended with Bandwidth
 | Delay(ms) | Package Loss | Bandwidth(kbps) | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
 | :----: | :----: | :----: | :----: | :----: | :----: |
 | 000 | 00% | 000 | 8 | 8 | 9 | 
