@@ -215,13 +215,13 @@ The supplementary experiment: testing increased bandwidth for different experime
 3. Small-scale experiments will be conducted with live-streaming videos, focusing specifically on testing with the 750 Ti. Emphasis will be on bandwidth, latency, and packet loss.
 
 Data table(GTX 750 Ti) Extended with bandwidth
-| Package Loss | Delay(ms) | Bandwidth(kbps) | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
+| Delay(ms) | Package Loss | Bandwidth(kbps) | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
 | :----: | :----: | :----: | :----: | :----: | :----: |
-| 00% | 000 | 000 | 8 | 8 | 9 | 
-| 00% | 200 | 000 | 8 | 3 | 6 | 
-| 10% | 000 | 000 | 8 | 5 | 8 | 
-| 10% | 200 | 000 | 7 | 5 | 6 |
-| 00% | 000 | 512 | 8 | 8 | 9 | 
-| 00% | 200 | 512 | 8 | 3 | 7 | 
-| 10% | 000 | 512 | 8 | 4 | 8 | 
-| 10% | 200 | 512 | 8 | 5 | 6 | 
+| 000 | 00% | 000 | 8 | 8 | 9 | 
+| 200 | 00% | 000 | 8 | 3 | 6 | 
+| 000 | 10% | 000 | 8 | 5 | 8 | 
+| 200 | 10% | 000 | 7 | 5 | 6 |
+| 000 | 00% | 512 | 8 | 8 | 9 | 
+| 200 | 00% | 512 | 8 | 3 | 7 | 
+| 000 | 10% | 512 | 8 | 4 | 8 | 
+| 200 | 10% | 512 | 8 | 5 | 6 | 
