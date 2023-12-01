@@ -116,7 +116,7 @@ Step 1: Remotely log in to the PC Router through the Control PC using SSH and se
 tc qdisc change dev eth1 root netem delay 0ms loss 0%
 ```
 Experimental Table
-| Delay(ms) | Package Loss | Bandwidth(kbps) | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating |
+| Delay(ms) | Package Loss | Bandwidth(kbps) | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | 1 | 000 | 00% | 000 |  |  |  | 
 | 2 | 200 | 00% | 000 |  |  |  | 
