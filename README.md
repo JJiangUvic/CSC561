@@ -117,15 +117,15 @@ tc qdisc change dev eth1 root netem delay 0ms loss 0%
 ```
 Experimental Table
 | Delay(ms) | Package Loss | Bandwidth(kbps) | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
-| :----: | :----: | :----: | :----: | :----: | :----: |
-| 000 | 00% | 000 |  |  |  | 
-| 200 | 00% | 000 |  |  |  | 
-| 000 | 10% | 000 |  |  |  | 
-| 200 | 10% | 000 |  |  |  |
-| 000 | 00% | 512 |  |  |  | 
-| 200 | 00% | 512 |  |  |  | 
-| 000 | 10% | 512 |  |  |  | 
-| 200 | 10% | 512 |  |  |  |
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| 1 | 000 | 00% | 000 |  |  |  | 
+| 2 | 200 | 00% | 000 |  |  |  | 
+| 3 | 000 | 10% | 000 |  |  |  | 
+| 4 | 200 | 10% | 000 |  |  |  |
+| 5 | 000 | 00% | 512 |  |  |  | 
+| 6 | 200 | 00% | 512 |  |  |  | 
+| 7 | 000 | 10% | 512 |  |  |  | 
+| 8 | 200 | 10% | 512 |  |  |  |
 
 
 In the real experiment, data from the experimental table will be used for configuration.  
