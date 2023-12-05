@@ -435,6 +435,8 @@ Step 4: Played 10min live 4K YouTube Videos and took screenshots.
 |3|0%|200ms|No Limit|
 |4|10%|0ms|No Limit|
 |5|10%|200ms|512kbps|
+
+
 Table 2. Experiment Control Group
 
 ### Expected Results:
