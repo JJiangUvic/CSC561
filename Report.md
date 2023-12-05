@@ -39,3 +39,43 @@ environment and GPU performance. Therefore, the objective of this project is to 
 factors that impact the viewing experience. This research is crucial due to the increasing reliance
 on online video content and the need for optimized video streaming technologies. The factors to be
 investigated include:
+
+• Network environment parameters (latency and packet loss)
+• Live or Stored Video
+• GPU performance
+• Video quality(4K-8K)
+
+While various studies are exploring aspects of video streaming performance, there is limited
+research that combines GPU decoding, network parameters, video quality, and codec analysis
+within a controlled virtual environment. Previous efforts often focus on isolated factors or lack
+comprehensive assessments.
+
+The approach involves setting up a simplified hardware environment to manipulate and monitor
+selected variables, including GPU decoding performance: assembling the environment with different
+GPU models. Standardized video streams are utilized to assess GPU decoding efficiency. Monitoring
+tools measure GPU utilization, decoding speed, and potential bottlenecks. The evaluation also
+utilizes tools similar to the tc (Traffic Control) tools for network parameter control. The final step 
+involves storing videos and live streaming, divided into different control groups. Each control group is shown to four participants who watch for 10 minutes and then fill out a pre-prepared survey.
+Finally, all survey responses are analyzed and evaluated.
+
+## BACKGROUND
+While YouTube, being one of the globe’s foremost video-sharing platforms, has been at the forefront
+of enhancing the viewer experience through the judicious selection of appropriate streaming
+protocols. In a bid to meet the diverse needs of its vast user base, YouTube has conducted extensive
+experimentation with an array of protocols and adaptive streaming mechanisms. This endeavor
+aims to ensure that video playback remains seamless and uninterrupted. Nonetheless, the choice of
+the most suitable protocol is contingent on a multitude of factors, including prevailing network
+conditions, the capabilities of the viewer’s device, and individual user preferences. Consequently,
+YouTube’s approach to protocol selection is a dynamic and adaptive one, attuned to the ever-shifting
+landscape of online video streaming.
+
+## YouTube Transmission
+
+YouTube employs a progressive download method for video transmission, allowing users to stream
+content seamlessly. When a user initiates playback, the video file is delivered in small chunks,
+with the first segment downloading immediately. Simultaneously, subsequent portions are fetched
+in the background, ensuring a continuous stream while minimizing buffering interruptions. This
+adaptive streaming technique adjusts the quality of the video based on the viewer’s internet speed,
+guaranteeing a smoother experience. Additionally, YouTube employs various codecs to compress
+and optimize video files for efficient transmission[9]
+
