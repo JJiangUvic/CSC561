@@ -519,12 +519,20 @@ online video transmission and serves as a valuable reference for future optimiza
 ## REFERENCES
 
 [1] George Pallis Athena Vakali. 2003. Content delivery networks: status and trends.
+
 [2] Martin A. Brown. 2006. Traffic Control HOWTO.
+
 [3] Intel. 2023. Analysis of YouTube DASH Traffic.
+
 [4] Evgeny Khorov Kamila Ragimova, Vyacheslav Loginov. 2019. Analysis of YouTube DASH Traffic.
+
 [5] Siquan Wang Yong Liu Liyang Sun, Tongyu Zong and Yao Wang. 2021. Towards Optimal Low-Latency Live Video
 Streaming.
+
 [6] Nvidia. 2023. GeForce GTX 750 Ti Specifications.
+
 [7] Nvidia. 2023. Intel® Products: Processors.
+
 [8] Sheng Wei and Viswanathan Swaminathan. 2014. Low Latency Live Video Streaming over HTTP 2.0.
+
 [9] Youtube. 2023. Youtube Help
