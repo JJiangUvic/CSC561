@@ -243,3 +243,97 @@ and optimize the flow of network traffic within the operating system. The primar
 performance, preventing congestion, and prioritizing critical traffic[2].
 
 Usage Example:
+```
+admin@PC_Router: $ tc qdisc add dev eth0 root netem loss 5% delay 100ms rate 1024kbit
+```
+
+• qdisc: modify the scheduler (aka queuing discipline)
+• add: add a new rule, After add the rule use [change] to modify the rule
+• dev eth0: rules will be applied on local port eth0
+• root: modify the outbound traffic scheduler (aka known as the egress qdisc)
+• netem: use the network emulator to emulate a WAN property
+• loss: introduce package loss rate of 5%
+• delay: introduce delay of 100 ms
+• rate: introduce bandwidth of 1024kbit
+
+This command requires knowledge of the port to which this router is connected to the master
+router. Therefore, the following command can be used to query the connected ports:
+```
+admin@PC_Router: $ lshw -C network
+```
+
+In the output, the logical name corresponding to the port will be the identifier for the respective
+local port. In this case: eth0
+
+## FIRST STAGE EXPERIMENT: USER EXPERIENCE OF STORED VIDEOS ON YOUTUBE VIA DIFFERENT GPUS
+
+### Experiment Design:
+The experiment lasted approximately two hours, including a 20-minute break. The experiment
+steps were as follows:
+Step 1: Remotely logged into the PC Router through the Control PC using SSH and set the TC
+parameters. In the experiment, data from the experimental table was used for configuration.
+Step 2: Performed ping tests to ensure that the correct latency and packet loss conditions were
+in place at that time.
+Step 3: Four participants watched YouTube videos, each lasting 5 minutes, and then performed
+response tests (randomly jumping to different times in the video).
+Step 4: Filled out the Survey, calculated the average score, and recorded the CPU and GPU usage.
+The survey questionnaire included the evaluation of three test items with scores in the range of 0-9
+for each: Quality: _/9 Frame Rate: _/9 Response: _/9
+Experimental Table
+| NO | Delay(ms) | Package Loss | Bandwidth(kbps) | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| 1 | 000 | 00% | 000 |  |  |  | 
+| 2 | 200 | 00% | 000 |  |  |  | 
+| 3 | 000 | 10% | 000 |  |  |  | 
+| 4 | 200 | 10% | 000 |  |  |  |
+| 5 | 000 | 00% | 512 |  |  |  | 
+| 6 | 200 | 00% | 512 |  |  |  | 
+| 7 | 000 | 10% | 512 |  |  |  | 
+| 8 | 200 | 10% | 512 |  |  |  |
+
+### Expected Results:
+• In different network environments, especially under rigorous experimental conditions, the
+performance of different graphics cards can vary significantly. This is particularly noticeable
+when it comes to playing 4K and 8K videos.
+• Playing 8K videos may experience noticeable stuttering, but it can still be relatively smooth
+under certain circumstances.
+
+### Data Analysis:
+Data table(Intel 530) Extended with Bandwidth
+| Delay(ms) | Package Loss | Bandwidth(kbps) | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
+| :----: | :----: | :----: | :----: | :----: | :----: |
+| 000 | 00% | 000 | 7 | 4 | 8 | 
+| 200 | 00% | 000 | 7 | 5 | 8 | 
+| 000 | 10% | 000 | 6 | 4 | 8 | 
+| 200 | 10% | 000 | 6 | 6 | 7 |
+| 000 | 00% | 512 | 7 | 5 | 7 | 
+| 200 | 00% | 512 | 7 | 5 | 6 | 
+| 000 | 10% | 512 | 6 | 4 | 8 | 
+| 200 | 10% | 512 | 7 | 5 | 5 | 
+
+
+Data table(GT1030) Extended with Bandwidth
+| Delay(ms) | Package Loss | Bandwidth(kbps) | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
+| :----: | :----: | :----: | :----: | :----: | :----: |
+| 000 | 00% | 000 | 7 | 7 | 9 | 
+| 200 | 00% | 000 | 8 | 6 | 6 | 
+| 000 | 10% | 000 | 8 | 6 | 8 | 
+| 200 | 10% | 000 | 7 | 5 | 6 |
+| 000 | 00% | 512 | 8 | 6 | 5 | 
+| 200 | 00% | 512 | 8 | 3 | 7 | 
+| 000 | 10% | 512 | 8 | 6 | 5 | 
+| 200 | 10% | 512 | 8 | 5 | 5 | 
+
+
+Data table(GTX 750 Ti) Extended with Bandwidth
+| Delay(ms) | Package Loss | Bandwidth(kbps) | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
+| :----: | :----: | :----: | :----: | :----: | :----: |
+| 000 | 00% | 000 | 8 | 8 | 9 | 
+| 200 | 00% | 000 | 8 | 6 | 6 | 
+| 000 | 10% | 000 | 8 | 6 | 8 | 
+| 200 | 10% | 000 | 7 | 5 | 6 |
+| 000 | 00% | 512 | 8 | 8 | 9 | 
+| 200 | 00% | 512 | 8 | 6 | 7 | 
+| 000 | 10% | 512 | 8 | 6 | 6 | 
+| 200 | 10% | 512 | 8 | 5 | 6 | 
+
