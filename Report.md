@@ -337,7 +337,7 @@ Data table(GTX 750 Ti) Extended with Bandwidth
 | 000 | 10% | 512 | 8 | 6 | 6 | 
 | 200 | 10% | 512 | 8 | 5 | 6 | 
 
-|GPU|Intel 530|GT1030|GTX750TI||||
+|GPU|Intel 530|Intel 530|GT1030|GT1030|GTX750TI|GTX750TI|
 | - | - | - | - | :- | :- | :- |
 |NO|CPU|GPU|CPU|GPU|CPU|GPU|
 |1|61%|61%|13%|85%|71%|55%|
