@@ -357,4 +357,4 @@ within the same network environment.
 • The experimental results will reflect aspects such as HTTP flow control, error control, congestion control, and similar factors.
 
 ### Data Analysis:
-![Layout](https://github.com/JJiangUvic/CSC561/assets/49337962/3b7959ce-ec76-4d35-aac0-12e8feb2e771)
+![Layout](active.png)
