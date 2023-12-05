@@ -181,3 +181,4 @@ while stored video provides flexibility for users to watch at their own pace. To
 the digital content landscape, serving diverse preferences and use cases.
 
 ## EXPERIMENTAL ENVIRONMENT ARCHITECTURE
+![Layout](https://github.com/JJiangUvic/CSC561/assets/49337962/3b7959ce-ec76-4d35-aac0-12e8feb2e771)
