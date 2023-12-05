@@ -299,6 +299,7 @@ when it comes to playing 4K and 8K videos.
 under certain circumstances.
 
 ### Data Analysis:
+#### Experiment for 4K video(Survey)
 Data table(Intel 530) Extended with Bandwidth
 | Delay(ms) | Package Loss | Bandwidth(kbps) | Quality Ave Rating | FrameRate Ave Rating | Response Ave Rating | 
 | :----: | :----: | :----: | :----: | :----: | :----: |
@@ -351,10 +352,179 @@ Data table(GTX 750 Ti) Extended with Bandwidth
 
 Table 1. CPU&GPU Usage
 
-### Expected Results
+(1) The experiment results were indeed unexpected. The three mentioned graphics cards demonstrated surprising performance in the realm of 4K videos. Although they faced challenges
+with frame rates, the picture quality remained acceptable, and the playback was relatively
+smooth, despite occasional frame drops. Response time appeared to be closely linked to network conditions. Furthermore, based on the ratings, it seemed that while different graphics
+cards offered similar picture quality, those with higher performance tended to showcase
+better frame rates. In summary, lower latency, reduced packet loss, and higher bandwidth
+contributed to lower response times.
+
+(2) In terms of average CPU and GPU usage, Intel® HD Graphics 530, as an integrated graphics
+solution, differed from discrete graphics. Both the CPU and GPU exhibited high usage rates.
+The reasons for this were as follows: the CPU was responsible for partial decoding and
+managing data scheduling between memory, CPU, and GPU. Due to the shared memory usage between the CPU and integrated GPU, there was a significant increase in the workload
+associated with data transfers. Additionally, the inherent performance of the GPU contributed
+to the rise in usage rates. This explained the usage rates of the CPU and GPU.
+
+(3) With the usage rates of the GT1030, the results indicated the liberation of CPU performance
+by the dedicated graphics card. The dedicated GPU, having its own VRAM, relieved the CPU
+from handling this aspect of the workload. On the other hand, the usage rates suggested
+that the combination of this CPU and GPU limited the overall performance improvement, as
+the GPU imposed restrictions on the overall performance enhancement. Compared to GPU
+usage, the CPU had more performance that could be unleashed. In summary, despite the
+significant difference in usage rates between the CPU and GPU, there was an improvement
+in frame rates based on the ratings.
+
+(4) In the GTX750Ti control group, there was a phenomenon similar to the GT1030 control group.
+From the usage rates, it appeared that, in this case, CPU performance limited the overall
+performance. The CPU had reached its limits in certain aspects, while the GPU still had room
+for improvement. This was reflected in the ratings, with this group giving the audience the
+impression of the highest frame rates. Compared to the Intel® HD Graphics 530, although
+both groups had relatively high usage rates, there was a noticeable difference in frame rates.
+
+(5) It’s also noteworthy that even when using a 1080P display, there is still an option for 4K.
+It’s important to recognize that playing 1080P videos on a 1080P display is different from
+playing 4K videos on a 1080P display. The latter scenario involved a higher bitrate, resulting
+in superior viewing quality, even if the display is not 4K. However, in terms of 4K video
+quality, a 4K display would outperform a 1080P display, with a higher refresh rate being
+preferable. 
+
+#### Experiment for 8K video: 
+Previously, the graphics cards utilized in the experiment encountered
+challenges when attempting to smoothly play 8K videos. As outlined in the user manuals for
+each graphics card, their design specifications were limited to supporting only 4K videos. The
+transmission requirements for 8K videos demand graphics card output interfaces such as DP
+(DisplayPort) or HDMI2.x. Regrettably, these interfaces were not implemented on the graphics cards employed in the experiment. Even when lowering the requirements to a 2K monitor, the
+attempt to play 8K videos proved unsuccessful. For example, the GTX750Ti exhibited a usage
+rate approaching 99%, indicating an inability to handle smooth playback. Consequently, it became
+evident that a more powerful and up-to-date GPU was imperative.
+
+### Conclusion of First Stage:
+Overall, the various graphics cards exhibited unexpected performance when facing 4K videos. Despite facing challenges with frame rates, the picture quality remained acceptable, and playback was
+relatively smooth. Network conditions directly impacted response time, with higher-performance
+graphics cards typically showcasing superior frame rates. In terms of CPU and GPU usage, integrated graphics cards, such as Intel® HD Graphics 530, demonstrated high usage rates primarily
+because the CPU was responsible for partial decoding and data scheduling. In contrast, dedicated
+graphics cards like GT1030 and GTX750Ti alleviated some of the CPU burden by sharing certain
+tasks, but performance improvements were limited due to GPU constraints. Both GT1030 and
+GTX750Ti showed similar performance in CPU and GPU usage, with room for improvement in
+GPU performance. On the other hand, the experiment’s graphics cards were unable to play 8K
+videos, as they were designed to support only 4K videos based on their user manuals. The required
+DP or HDMI2.x interfaces for 8K videos were not implemented on the graphics cards used in the
+experiment. Even with a lowered requirement of using a 2K monitor, 8K videos could not be played
+smoothly, indicating the need for more powerful and updated GPUs.
+
+## SECOND STAGE EXPERIMENT: PLAY LIVE 4K YOUTUBE VIDEO IN DIFFERENT NETWORK ENVIRONMENTS
+### Experiment Design:
+Based on the results of the first stage of the experiment, where none of the graphics cards could
+play 8K videos, and considering the objective of exploring the relationship between live video
+and network conditions, the GT1030 was utilized as the experimental platform for this stage. This
+choice was made because it was not performance-limited by the CPU. Additionally, the experiment continued to use TC for configuring the network environment. On the other hand, the experiment
+employed YouTube’s native "Stats for nerds" to monitor overall performance. Additionally, Chrome
+DevTools were utilized to track network conditions.
+Step 1: Remotely logged into the PC Router through the Control PC using SSH and set the TC
+parameters. In the experiment, data from the experimental table was used for configuration.
+Step 2: Performed ping tests to ensure that the correct latency and packet loss conditions were
+in place at that time.
+Step 3: Set up the Stats for nerds and DevTools.
+Step 4: Played 10min live 4K YouTube Videos and took screenshots.
+
+|No|Package Loss Rate|Delay|Bandwidth|
+| - | - | - | - |
+|1|0%|0ms|No Limit|
+|2|0%|0ms|512kbps|
+|3|0%|200ms|No Limit|
+|4|10%|0ms|No Limit|
+|5|10%|200ms|512kbps|
+Table 2. Experiment Control Group
+
+### Expected Results:
+
 • It allows for a visual representation of the transmission characteristics at the network layer
 within the same network environment.
 • The experimental results will reflect aspects such as HTTP flow control, error control, congestion control, and similar factors.
 
 ### Data Analysis:
+![Layout](network.png)
 ![Layout](active.png)
+
+(1) The control group [1] corresponded to an unrestricted network environment, illustrating the
+basic operation of the transmission protocol: initially receiving data packets and buffering
+them. As the video played, the utility of the buffer decreased until new data packets were
+received. Looking at the loading times corresponding to various data packets, the results
+indicated that in an unrestricted environment, the transmission was very stable, with quick
+response times. The time intervals between data packets were also evenly distributed, allowing
+for smooth live streaming.
+
+(2) The control group [2] corresponded to a bandwidth of 512kbps. From the loading times and
+network activity, it was evident that the loading time of video data packets had a noticeable
+increase. However, the start times of loading for each data packet were still relatively uniform.
+This aligned with the expectation that data requires more time to pass through a narrower
+pipeline. On the other hand, due to the relatively low latency, acknowledgments could
+communicate the data transmission situation promptly, preventing any phenomena of failed
+data packet loading.
+
+(3) The control group [3] corresponded to a 200ms delay. The data indicated an increase in
+the loading time for each packet, as the delay directly impacted the loading time. However,
+this did not result in failed data packet loading. This observation suggested that the design
+of Error Control and Flow Control played a crucial role. These controls would continue to
+demonstrate their importance in subsequent experiments.
+
+(4) The control group [4] corresponded to a 10% packet loss rate. From the results, it was evident
+that because packet loss occurred randomly, some data packets remained unaffected, while
+the transmission time for others significantly increased due to partial re-transmission. This
+highlighted the importance of transport layer controls, as packet loss was not directly reflected
+at the application layer.
+
+(5) The control group [5] corresponded to a stringent set of conditions: a 10% packet loss rate,
+200ms delay, and 512kbps bandwidth. Surprisingly, despite a significant increase in the
+transmission time for each data packet, the video could still play smoothly for the most part
+due to the presence of buffering. It was noteworthy that although playback was possible,
+the time intervals between data packets were not uniform, showing drastic fluctuations.
+Additionally, some data packets lost a portion of their data, but thanks to the application
+layer’s Error Control, this lost data was redundantly recovered. From the viewer’s perspective,
+frame drops and stuttering might be observed. Nevertheless, these measures effectively
+ensured the continuous playback of the video.
+
+### Conclusion of Second Stage:
+In summary, YouTube has implemented comprehensive measures to ensure playback quality.
+This implementation reflects the assurance and error-correction mechanisms provided by both
+the transport layer and application layer in data transmission. Despite challenging experimental
+conditions, the quality of playback is maintained for the most part. Of course, video compression
+also plays a crucial role in achieving these results. On the other hand, if the network conditions are
+poor, YouTube also takes measures, such as automatically adjusting resolution, dropping frames,
+and extending the initial loading time.
+
+## DISCUSSION:
+In this comprehensive exploration of YouTube video transmission performance and quality, we
+scrutinized diverse factors such as network dynamics, GPU decoding capabilities, and video compression. Through experiments and real-world testing, our conclusions shed light on crucial aspects
+of network protocols, GPU performance, and video quality.
+
+Firstly, YouTube employs a multi-faceted approach to ensure optimal video playback quality
+across varying network conditions. This is evident in the intelligent adjustments of its transmission
+protocols, robust error correction mechanisms, and dynamic adaptation to network variables.
+
+Secondly, GPU performance testing across different models revealed that YouTube maintains
+satisfactory video playback even on older GPUs, with some challenges apparent in handling higher
+resolution videos. This underscores YouTube’s high level of optimization in video decoding.
+
+Lastly, network environment simulations, including bandwidth restrictions, latency, and packet
+loss, demonstrated YouTube’s resilience. Even under extreme conditions, the platform adeptly
+adjusts resolution, drops frames, and employs other strategies to ensure continuous video playback.
+
+In summary, YouTube exhibits exceptional technical proficiency in video transmission, blending
+transmission protocols, GPU decoding, and adaptive mechanisms to provide users with a superior
+online video experience. This study provides profound insights into critical factors influencing
+online video transmission and serves as a valuable reference for future optimization endeavors
+
+## REFERENCES
+
+[1] George Pallis Athena Vakali. 2003. Content delivery networks: status and trends.
+[2] Martin A. Brown. 2006. Traffic Control HOWTO.
+[3] Intel. 2023. Analysis of YouTube DASH Traffic.
+[4] Evgeny Khorov Kamila Ragimova, Vyacheslav Loginov. 2019. Analysis of YouTube DASH Traffic.
+[5] Siquan Wang Yong Liu Liyang Sun, Tongyu Zong and Yao Wang. 2021. Towards Optimal Low-Latency Live Video
+Streaming.
+[6] Nvidia. 2023. GeForce GTX 750 Ti Specifications.
+[7] Nvidia. 2023. Intel® Products: Processors.
+[8] Sheng Wei and Viswanathan Swaminathan. 2014. Low Latency Live Video Streaming over HTTP 2.0.
+[9] Youtube. 2023. Youtube Help
