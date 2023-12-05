@@ -350,3 +350,11 @@ Data table(GTX 750 Ti) Extended with Bandwidth
 |8|66%|58%|17%|84%|72%|41%|
 
 Table 1. CPU&GPU Usage
+
+### Expected Results
+• It allows for a visual representation of the transmission characteristics at the network layer
+within the same network environment.
+• The experimental results will reflect aspects such as HTTP flow control, error control, congestion control, and similar factors.
+
+### Data Analysis:
+![Layout](https://github.com/JJiangUvic/CSC561/assets/49337962/3b7959ce-ec76-4d35-aac0-12e8feb2e771)
