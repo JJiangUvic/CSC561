@@ -182,3 +182,64 @@ the digital content landscape, serving diverse preferences and use cases.
 
 ## EXPERIMENTAL ENVIRONMENT ARCHITECTURE
 ![Layout](https://github.com/JJiangUvic/CSC561/assets/49337962/3b7959ce-ec76-4d35-aac0-12e8feb2e771)
+### Hardware Explain:
+1. Master Router: The router is used to
+connect the local network to the local area network provider Shaw. It is responsible for signal
+modulation and provides services such as DHCP
+and packet transport for devices operating at
+layer
+
+2. Control PC:. The PC running in a Windows 10 environment is used for receiving signals from a capture card and sending commands
+to the PC router in the experimental platform.
+The commands include configuring and modifying Linux router settings, as well as adjusting
+latency and packet loss rates.
+
+3. Client Monitor: Providing video output for the participants in the experiment.
+
+4. Capture Card: Used to replicate video signals and provide data to the software installed on
+the Control PC.
+
+6. PC Router: A PC running in an Ubuntu environment, installed with an SSH server for
+remote login and control by the Control PC to achieve the experiment’s objectives. It also installed TC (Traffic Control) for configuring network latency and packet loss rates. One of the physical
+network ports of this PC is directly point-to-point connected to a physical network port on the
+Control PC, with manual configuration to ensure communication for SSH login. Another port of
+this PC is connected to the Master Router, which provides IP and internet services through DHCP.
+Meanwhile, TC is used to adjust parameters like latency and packet loss on this port. Finally, the
+last port is connected to the Experiment PC to provide port forwarding for it.
+
+7. Experiment Client: A PC running in a Windows 10 environment is used to test various
+graphics cards, primarily through YouTube browsing. Additionally, this PC provides video output
+to a monitor to provide data to the experimenters. This platform is temporary, allowing for the
+convenient replacement of the GPUs and the platform includes:
+• 6700k CPU
+• 8G RAM
+• Motherboard
+• 1TB HHD
+• PSU
+• GPUs
+
+### GPUs Introduction
+
+1. Intel® HD Graphics 530: Intel® HD Graphics 530, part of the Skylake architecture (2015),
+is an integrated GPU for lightweight computing tasks. Supporting DirectX 12 and OpenGL 4.4, it
+offers hardware-accelerated video capabilities. Although not suited for high-end gaming, it provides
+reliable performance for daily computing. Typically paired with Core i5 and Core i7 processors, it
+enhances multimedia experiences. For the latest details, refer to Intel’s official documentation[3].
+
+2. GeForce GT 1030: The GeForce GT 1030, part of NVIDIA’s Pascal architecture, is a budgetfriendly graphics card introduced in 2017. Designed for entry-level gaming and multimedia tasks,
+it features 2GB GDDR5 memory, compact form factor, and low power consumption. While not
+suitable for high-end gaming, it provides a cost-effective solution for users seeking improved performance over integrated graphics. For more detailed information, refer to NVIDIA’s official
+website [7].
+
+3. GeForce GTX 750 Ti: The GeForce GTX 750 Ti, part of NVIDIA’s Maxwell architecture
+and released in 2014, is known for its energy efficiency and budget-friendly performance. With
+2GB of GDDR5 video memory, it supports technologies like NVIDIA GPU Boost and ShadowPlay,
+making it suitable for 1080p gaming and multimedia tasks. For more detailed information, refer to
+NVIDIA’s official website[6].
+
+### Traffic Control
+Traffic Control in Linux is a set of tools and mechanisms that enable administrators to manage
+and optimize the flow of network traffic within the operating system. The primary tool for implementing traffic control is the tc command. This feature is essential for ensuring efficient network
+performance, preventing congestion, and prioritizing critical traffic[2].
+
+Usage Example:
