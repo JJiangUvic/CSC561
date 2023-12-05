@@ -264,3 +264,6 @@ Data table(GTX 750 Ti) Extended with Bandwidth
 | 200 | 00% | 512 | 8 | 6 | 7 | 
 | 000 | 10% | 512 | 8 | 6 | 6 | 
 | 200 | 10% | 512 | 8 | 5 | 6 | 
+
+*****
+Full Vision Report:click(https://github.com/JJiangUvic/CSC561/blob/main/Report.md)
